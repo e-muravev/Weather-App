@@ -1,0 +1,59 @@
+.weatherField {
+	max-width: 1366px;
+	width: 95%;
+	margin: 3rem auto;
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-row: 1fr;
+	padding: 3rem 2rem 3rem 2rem;
+	background-color: rgba(0,0,0,.9);
+	border-radius:  15px;
+}
+.currentWeather {
+	color: white;
+	width: 100%; 
+}
+.forecast {
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	font-size: 0.85rem;
+}
+.temperature {
+	justify-content: center;
+}
+.temperature p:first-child {
+	margin: 0;
+	font-size: 3rem;
+}
+.footerWeather {
+	display: flex;
+	justify-content: space-around;
+	font-size: 0.8rem;
+	width: 100%;
+}
+.footerWeather p {
+	padding: 0px 10px;
+}
+
+@media (max-width: 576px) {
+	
+}
+@media (max-width: 1200px) { 
+    .weatherField {
+    	grid-template-columns: 1fr;
+		grid-row: 2fr;
+		padding-top: 1rem;
+   }
+   .forecast {
+   		flex-direction: column;
+   }
+   .curentWeather {
+   		padding-right: 1rem;
+   }
+   .footerWeather {
+   		justify-content: center;
+   }
+}
+

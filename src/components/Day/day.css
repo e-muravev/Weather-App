@@ -1,0 +1,76 @@
+.Day {
+	display: flex;
+	width: 20%;
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 10px;
+	margin: 0 5px;
+	padding: 5px 5px 30px 5px;
+	box-shadow: 2px 2px 1px 1px rgba(255,255,255,0.7);
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.wind, .humidity, .temp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.this-is-only-for-mobile-and-tablet {
+	display: none;
+}
+
+.this-is-only-for-screen {
+	display: block;
+}
+
+@media (max-width: 578px) {
+	.wind, .humidity {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.img {
+		width: 30px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+	.img {
+		width: 40px;
+	}
+}
+
+@media (max-width: 1200px) { 
+
+   .Day {
+   		flex-direction: row;
+   		width: 100%;
+   		padding: 0;
+   		box-shadow: none;
+   		margin: 5px;
+   		padding: 10px 0px 10px 10px;
+   		justify-content: center;
+   }
+
+   .main-info-about-day {
+   		display: flex;
+   		align-items: center;
+   		justify-content: space-between;
+   		width: 100%;
+   		margin-right: 5px;
+   }
+
+   .condition {
+   	display: none;
+   }
+
+   .this-is-only-for-mobile-and-tablet {
+		display: block;
+	}
+
+	.this-is-only-for-screen {
+		display: none;
+	}
+}
+
