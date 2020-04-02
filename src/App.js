@@ -91,14 +91,14 @@ function App() {
 
   useEffect(() => {
     dispatch(searchCurrentWeather())
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${default_city}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${default_city}`)
       .then(response => response.json())
       .then(data => {
         if(data.current) { dispatch(searchCurrentWeatherSuccess(data)) }
         else { dispatch(searchCurrentWatherFailure(data)) }
       })
     dispatch(searchForecast())
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${default_city}&days=7`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${default_city}&days=7`)
       .then(response => response.json())
       .then(data => { 
         if(data.forecast) { dispatch(searchForecastSuccess(data)) }
@@ -109,14 +109,14 @@ function App() {
   const search = (searchValue) => {
 
     dispatch(searchCurrentWeather())
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${searchValue}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${searchValue}`)
       .then(response => response.json())
       .then(data => {
         if(data.current) { dispatch(searchCurrentWeatherSuccess(data)) }
         else { dispatch(searchCurrentWatherFailure(data.error.message)) }
       })
     dispatch(searchForecast())
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchValue}&days=7`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchValue}&days=7`)
       .then(response => response.json())
       .then(data => { 
         if(data.forecast) { dispatch(searchForecastSuccess(data)) }
