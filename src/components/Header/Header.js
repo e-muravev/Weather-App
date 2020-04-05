@@ -6,7 +6,7 @@ function Header() {
 	return (
 		<header style={{width: '100%', backgroundColor: 'rgba(0,0,0,.75)'}}>
 			<div className="header">
-				<h2>Weather App</h2>
+				<p>Weather App</p>
 				<img src={logo} alt="logo"/>
 			</div>
 		</header>
