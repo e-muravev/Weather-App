@@ -1,12 +1,13 @@
 .search {
 	display: flex;
 	justify-content: space-between;
-	width: 80%;
+	width: 90%;
 	padding: 0.5rem 0.5rem;
 	border-radius: 30px;
 	background-color: rgba(0,0,0,.5);
 	margin: 3rem auto 0px auto;
 	border: 2px solid black;
+	position: relative;
 }
 
 .search input {
@@ -23,6 +24,36 @@
 	color: white;
 }
 
+.autocomplete {
+	background-color: rgba(255,255,255,.9);
+	position: absolute;
+	top: 100%;
+	left: 6%;
+	border-radius: 10px;
+}
+
+.autocomplete p { 
+	margin: 0;
+	cursor: default;
+}
+
+.autocomplete div:first-child {
+	border-radius: 10px 10px 0 0;
+}
+
+.autocomplete div:last-child {
+	border-radius: 0 0 10px 10px;
+}
+
+.geo {
+	display: flex;
+	padding: 5px 10px;
+	align-items: center;
+}
+
+.geo:hover { 
+	background-color: #0d5c1d;
+}
 
 .search button {
 	width: 35%;
@@ -48,4 +79,12 @@
 
 .search button::-moz-focus-inner {
    border: 0;
+}
+
+
+@media (max-width: 576px) {
+	.autocomplete {
+		width: 87%;
+		padding: 0;
+	}
 }

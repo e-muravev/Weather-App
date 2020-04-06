@@ -11,20 +11,30 @@
 .header p {
 	margin: 0;
 	text-decoration: underline;
-	font-size: 26px;
+	font-size: 30px;
 }
 
 .header img {
-	width: 32px;
+	width: 35px;
 
 }
 
 @media (max-width: 576px) {
 
 	.header img {
-		width: 21px;
+		width: 17px;
 	}
 	.header p {
-		font-size: 18px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 992px) {
+	.header p {
+		font-size: 26px;
+	}
+
+	.header img {
+		width: 32px;
 	}
 }
