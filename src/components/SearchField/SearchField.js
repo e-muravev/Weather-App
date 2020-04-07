@@ -34,9 +34,11 @@ function SearchField({ search }) {
 	}
 
 	const getAutocompleteData = (region) => {
-		(window.outerWidth > 576) ? setSearchField(region) : setSearchField(`${region.slice(0, 22)}...`)
+		// (window.outerWidth > 576) ? setSearchField(region) : setSearchField(`${region.slice(0, 22)}...`)
 		setAutocomplete([])
 		searchInput.current.focus()
+		search(searchValue);
+		resetSearchField();
 	}
 
 	const callSearchFunction = (event) => {
