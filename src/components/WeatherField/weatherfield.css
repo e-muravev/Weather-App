@@ -17,7 +17,7 @@
 .forecast {
 	color: white;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: nowrap;
 	font-size: 0.85rem;
 }
