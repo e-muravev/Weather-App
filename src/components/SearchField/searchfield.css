@@ -90,3 +90,10 @@
 		padding: 0;
 	}
 }
+
+@media (min-width: 800px) {
+	.search button {
+		width: 25%;
+	}
+	
+}

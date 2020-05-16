@@ -1,14 +1,9 @@
 import React from 'react'
-import './header.css'
-import logo from './logo.png'
 
 function Header() {
 	return (
-		<header style={{width: '100%', backgroundColor: 'rgba(0,0,0,.75)'}}>
-			<div className="header">
-				<p>Weather App</p>
-				<img src={logo} alt="logo"/>
-			</div>
+		<header style={{margin: '0 auto'}}>
+			<h1 style={{textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)', fontSize: '2.5rem'}}>Awesome Weather Application</h1>
 		</header>
 	);
 }

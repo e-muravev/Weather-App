@@ -11,8 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background: rgb(61,184,68);
-background: linear-gradient(90deg, rgba(61,184,68,1) 0%, rgba(23,158,37,1) 31%, rgba(0,0,17,1) 100%); 
+  background: rgb(184,61,177);
+  background: linear-gradient(90deg, rgba(184,61,177,1) 0%, rgba(12,189,147,1) 100%);  
 }
 
 code {
