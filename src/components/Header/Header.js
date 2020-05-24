@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
 	return (
 		<header style={{margin: '0 auto'}}>
-			<h1 style={{textShadow: '2px 2px 2px rgba(0, 0, 0, 0.35)', fontSize: '2.5rem'}}>Awesome Weather Application</h1>
+			<h3 style={{color: 'white', fontSize: '2.5rem', textShadow: '2px 2px 2px black'}}>Awesome Weather Application</h3>
 		</header>
 	);
 }

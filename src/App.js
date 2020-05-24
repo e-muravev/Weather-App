@@ -98,7 +98,7 @@ function App() {
         else { dispatch(searchCurrentWatherFailure(data)) }
       })
     dispatch(searchForecast())
-    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${default_city}&days=4`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${default_city}&days=6`)
       .then(response => response.json())
       .then(data => { 
         if(data.forecast) { dispatch(searchForecastSuccess(data)) }
@@ -117,7 +117,7 @@ function App() {
         else { dispatch(searchCurrentWatherFailure(data.error.message)) }
       })
     dispatch(searchForecast())
-    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchValue}&days=7`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchValue}&days=6`)
       .then(response => response.json())
       .then(data => { 
         if(data.forecast) { dispatch(searchForecastSuccess(data)) }

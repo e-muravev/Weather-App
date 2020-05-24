@@ -7,8 +7,13 @@ import pressure from './pressure.png'
 import Day from '../Day/Day'
 
 function WeatherField({ weather, forecast }) {
+	
+	
 	if (weather.location && forecast.forecast)
 	{
+		
+		const dayValue = new Date().getDay() + 1
+
 		return(
 		<div className="weatherField">
 			<div className="currentWeather">
@@ -39,7 +44,12 @@ function WeatherField({ weather, forecast }) {
 				</div>
 			</div>
 			<div className="forecast">
-				{forecast.forecast.forecastday.map((day, i) => (<Day key={i} day={day}/>))}
+				{forecast.forecast.forecastday.map((day, i) => (<Day key={i} day={day} dayValue={dayValue+i}/>))}
+				{
+					forecast.forecast.forecastday.length === 3 ?
+					forecast.forecast.forecastday.reverse().map((day, i) => (<Day key={i} bugAPI={true} day={day} dayValue={dayValue+i+3}/>)):
+					null
+				}
 			</div>
 		</div>
 		);

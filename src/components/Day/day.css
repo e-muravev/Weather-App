@@ -1,11 +1,10 @@
 .Day {
 	display: flex;
-	width: 20%;
-	border: 1px solid rgba(255,255,255,0.7);
+	width: 25%;
 	border-radius: 10px;
 	margin: 0 5px;
 	padding: 5px 5px 30px 5px;
-	box-shadow: 2px 2px 1px 1px rgba(255,255,255,0.7);
+	box-shadow: 0 1px 4px rgba(255,255,255, .6);
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -47,7 +46,6 @@
    		flex-direction: row;
    		width: 100%;
    		padding: 0;
-   		box-shadow: none;
    		margin: 5px;
    		padding: 10px 0px 10px 10px;
    		justify-content: center;

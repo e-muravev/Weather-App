@@ -1,6 +1,6 @@
 .weatherField {
 	max-width: 1366px;
-	width: 90%;
+	width: 95%;
 	margin: 3rem auto;
 	display: grid;
 	grid-template-columns: 24% 75%;
@@ -9,6 +9,10 @@
 	padding: 3rem 2rem 3rem 2rem;
 	background-color: rgba(0,0,0,.8);
 	border-radius:  15px;
+	box-shadow:
+	inset rgba(0,0,0,.6) 0 -3px 8px,
+	inset rgba(252,255,255,.7) 0 1px 5px,
+	rgba(0,0,0,.8) 0 3px 8px -3px;
 }
 .currentWeather {
 	color: white;
