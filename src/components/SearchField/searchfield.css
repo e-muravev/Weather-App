@@ -24,6 +24,7 @@
 	color: white;
 }
 
+
 .autocomplete {
 	background-color: rgba(255,255,255,.9);
 	position: absolute;
@@ -70,12 +71,21 @@
 	background-image: linear-gradient(to bottom, #efefef, #777); 
 	cursor: pointer;
 	outline: none;
+	font-size: 1rem;
+	transition-duration: 0.4s;
 }
 
 .search button::-moz-focus-inner {
    border: 0;
 }
 
+.search button:hover {
+	opacity: 0.8
+}
+.search button:active {
+	background-color: #ba68c8;
+	background-image: none;
+}
 
 @media (max-width: 576px) {
 	.autocomplete {

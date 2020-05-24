@@ -60,7 +60,7 @@ function SearchField({ search }) {
 
 	return (
 		<div style={{position: 'relative'}}>
-			<form className="search" style={errorInput ? {border: '3px solid red'} : null}>
+			<form className="search" style={errorInput ? {border: '1px solid red'} : null}>
         		<input
           			value={searchValue}
           			onChange={handleSearchInputChanges}
