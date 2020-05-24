@@ -74,9 +74,9 @@ function SearchField({ search }) {
       		<div className="autocomplete">
       			{autocomplete ? autocomplete.map(region => {
       				return (
-      					<div key={region.id} className="geo">
+      					<div key={region.id} className="geo" onClick={() => getAutocompleteData(region.name)}>
       						<img style={{marginRight: '5px'}} src={geometka} alt='geometka' width='20px' height='25px'/>
-      						<p style={{cursor: 'pointer'}} onClick={() => getAutocompleteData(region.name)}>{region.name}</p>
+      						<p style={{cursor: 'pointer'}}>{region.name}</p>
       					</div>
       				); 
       			}) : null}
