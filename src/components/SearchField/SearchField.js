@@ -9,7 +9,7 @@ function SearchField({ search }) {
 	const [errorPlaceholder, setErrorPlaceholder] = useState('Find your location...')
 	const [autocomplete, setAutocomplete] = useState([])
 
-	const searchInput = React.createRef();
+	const searchInput = React.createRef()
 	
 	const handleSearchInputChanges = (event) => {
 		let value = event.target.value;
@@ -37,16 +37,17 @@ function SearchField({ search }) {
 		// (window.outerWidth > 576) ? setSearchField(region) : setSearchField(`${region.slice(0, 22)}...`)
 		setAutocomplete([])
 		searchInput.current.focus()
-		search(searchValue);
-		resetSearchField();
+		search(searchValue)
+		resetSearchField()
+		setErrorInput(false)
 	}
 
 	const callSearchFunction = (event) => {
-		event.preventDefault();
+		event.preventDefault()
 		if (searchValue)
 		{
-			search(searchValue);
-			resetSearchField();
+			search(searchValue)
+			resetSearchField()
 			setErrorInput(false)
 			setErrorPlaceholder('Find your location...')
 			setAutocomplete([])
