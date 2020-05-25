@@ -47,7 +47,7 @@ function WeatherField({ weather, forecast }) {
 				{forecast.forecast.forecastday.map((day, i) => (<Day key={i} bugAPI={false} day={day} dayValue={dayValue+i}/>))}
 				{
 					forecast.forecast.forecastday.length === 3 ?
-					forecast.forecast.forecastday.reverse().map((day, i) => (<Day key={i} bugAPI={true} day={day} dayValue={dayValue+i+3}/>)):
+					forecast.forecast.forecastday.reverse().map((day, i) => (<Day key={i} bugAPI={true} day={day} dayValue={(dayValue+i+3)===6 ? dayValue+i+3 : 0}/>)):
 					null
 				}
 			</div>
