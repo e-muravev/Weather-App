@@ -13,7 +13,7 @@ function WeatherField({ weather, forecast }) {
 	{
 		
 		const dayValue = new Date().getDay() + 1 
-		const maxDay = 6
+		const maxDay = 7
 
 		return(
 		<div className="weatherField">
