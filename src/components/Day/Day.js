@@ -4,7 +4,7 @@ import wind from './wind.png'
 import humidity from './humidity.png'
 
 function Day({ day, dayValue, bugAPI }) {
-	
+	console.log(dayValue)
 	let dayName = ''
 	switch (dayValue) {
 		case 0:

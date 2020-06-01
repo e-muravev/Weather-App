@@ -12,7 +12,7 @@ function WeatherField({ weather, forecast }) {
 	if (weather.location && forecast.forecast)
 	{
 		
-		const dayValue = new Date().getDay() 
+		const dayValue = new Date().getDay() + 1 
 		const maxDay = 6
 
 		return(
@@ -48,7 +48,7 @@ function WeatherField({ weather, forecast }) {
 				{forecast.forecast.forecastday.map((day, i) => (<Day key={i} bugAPI={false} day={day} dayValue={(dayValue+i) >= 7  ? (dayValue+i-maxDay)  : (dayValue+i)}/>))}
 				{
 					forecast.forecast.forecastday.length === 3 ?
-					forecast.forecast.forecastday.reverse().map((day, i) => (<Day key={i} bugAPI={true} day={day} dayValue={(dayValue+i+2) >= 7 ? (dayValue+i+2-maxDay) : (dayValue+i+2-maxDay)}/>)):
+					forecast.forecast.forecastday.reverse().map((day, i) => (<Day key={i} bugAPI={true} day={day} dayValue={(dayValue+i+3) >= 7 ? (dayValue+i+3-maxDay) : (dayValue+i+3)}/>)):
 					null
 				}
 			</div>
